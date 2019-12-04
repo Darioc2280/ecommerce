@@ -38,20 +38,20 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_countries',
-    'core',
-
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'django_countries',
+    'paypal.standard.ipn',
+]
 
 LOCAL_APPS = [
+    'core.apps.CoreConfig',
     'products.apps.ProductsConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
-# SECURITY WARNING: Cuidado con esto no toques xd
 AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
