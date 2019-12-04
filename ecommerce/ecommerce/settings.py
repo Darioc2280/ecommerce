@@ -38,6 +38,9 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_countries',
+    'core',
+
 ]
 
 THIRD_PARTY_APPS = []
